@@ -27,7 +27,7 @@ Cart Page:
 
 ## Demo
 
-- [Live Demo](https://dnsweets-master.now.sh/)
+- [Live Demo](https://dnsweets.now.sh/)
 
 ## GitHub Repo
 
