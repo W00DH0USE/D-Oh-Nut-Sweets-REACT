@@ -13,6 +13,7 @@ export default class Details extends Component {
             id,
             img,
             info,
+            ingredients,
             price,
             title,
             inCart
@@ -37,9 +38,13 @@ export default class Details extends Component {
                 {/* product info */}
                 <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
                   <p className="text-capitalize font-weight-bold mt-3 mb-0">
-                    some info about product :
+                    Description:
                   </p>
                   <p className="text-muted lead">{info}</p>
+                  <p className="text-capitalize font-weight-bold mt-3 mb-0">
+                    Ingredients:
+                  </p>
+                  <p className="text-muted lead">{ingredients}</p>
                   <h4 className="text-blue">
                     <strong>
                       price : <span>$</span>

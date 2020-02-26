@@ -14,7 +14,7 @@ export default class ProductList extends Component {
         <div className="productWrapper pb-5" style={{ paddingTop: "76px"}}>
           <div className="container">
             <Title name="our" title="store" />
-            <div className="row">
+            <div className="row products-container">
               <ProductConsumer>
                 {value => {
                   return value.products.map(product => {

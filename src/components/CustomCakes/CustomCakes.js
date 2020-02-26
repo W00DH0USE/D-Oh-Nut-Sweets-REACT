@@ -41,7 +41,7 @@ export default class CustomCakes extends Component {
                   <div class="form-group">
                     <label class="control-label" for="textinput">Order Number</label>  
                     <div>
-                    <input id="textinput" name="textinput" type="text" placeholder="DNS-106" class="form-control input-md" />
+                    <input id="textinput" name="textinput" type="text" placeholder="DNS-106" class="form-control input-md" disabled/>
                     </div>
                   </div>
 
