@@ -225,9 +225,7 @@ body {
 /* Landing Page Footer */
 
 .footer-title {
-  background-image: url("./assets/images/donut-blue.jpg");
-  /* background-attachment: fixed; */
-  background-size: 100%;
+  background: #65ADC5;
 }
 
 .footer-contact {

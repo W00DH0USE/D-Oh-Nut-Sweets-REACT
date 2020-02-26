@@ -47,7 +47,7 @@ export default class Navbar extends Component {
                   </li>
                   <li class="nav-item">
                     <Link to="/custom" className="nav-link ml-4">
-                      custom cakes
+                      custom cake
                     </Link>
                   </li>
                 </ul>
@@ -67,7 +67,7 @@ export default class Navbar extends Component {
                     </li>
                     <li class="nav-item">
                       <Link to="/custom" className="mobile-nav-link nav-link ml-4" onClick={() => this.closeMobileNav()}>
-                        custom cakes
+                        custom cake
                       </Link>
                     </li>
                   </ul>

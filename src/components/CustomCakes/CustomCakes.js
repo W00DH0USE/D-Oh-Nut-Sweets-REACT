@@ -30,7 +30,7 @@ export default class CustomCakes extends Component {
           return (
             <div className="container mt-5" style={{ paddingTop: "76px"}}>
               <Helmet>
-                <title>D'Oh! Nut Sweets - Home</title>
+                <title>D'Oh! Nut Sweets - Custom Cake</title>
               </Helmet>
               <Title name="order a" title="Custom Cake" />
 

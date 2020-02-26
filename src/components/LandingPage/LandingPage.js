@@ -146,7 +146,7 @@ export default class LandingPage extends Component {
             <div className="row">
               <div className="col-md-6 footer-title py-5">
                 <h1 className="text-capitalize text-center">
-                  <strong className="banner-title">D'Oh! Nut Sweets</strong>
+                  <strong className="footer-banner-title banner-title">D'Oh! Nut Sweets</strong>
                 </h1>
                 <div className="footer-icons mt-3 d-flex justify-content-around flex-wrap">
                   {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
@@ -169,24 +169,26 @@ export default class LandingPage extends Component {
               </div>
               <div className="col-md-6 footer-contact text-capitalize text-center py-5">
                 <h3 className="mb-5">contact</h3>
-                <p className="d-flex flex-wrap">
-                  <span className="mr-4 footer-icon">
-                    <i className="fas fa-map fa-black"></i>
-                  </span>
-                  <span>123 Main Street, carlsbad CA 92008</span>
-                </p>
-                <p className="d-flex flex-wrap">
-                  <span className="mr-4 footer-icon">
-                    <i className="fas fa-phone fa-black"></i>
-                  </span>
-                  <span>(123) 456-789</span>
-                </p>
-                <p className="d-flex flex-wrap">
-                  <span className="mr-4 footer-icon">
-                    <i className="fas fa-envelope fa-black"></i>
-                  </span>
-                  <span>info@duh-nut-sweets.com</span>
-                </p>
+                <div className="footer-contact-details mx-auto px-3">
+                  <p className="d-flex flex-wrap">
+                    <span className="mr-4 footer-icon">
+                      <i className="fas fa-map fa-black"></i>
+                    </span>
+                    <span>123 Main Street, carlsbad CA 92008</span>
+                  </p>
+                  <p className="d-flex flex-wrap">
+                    <span className="mr-4 footer-icon">
+                      <i className="fas fa-phone fa-black"></i>
+                    </span>
+                    <span>(123) 456-789</span>
+                  </p>
+                  <p className="d-flex flex-wrap">
+                    <span className="mr-4 footer-icon">
+                      <i className="fas fa-envelope fa-black"></i>
+                    </span>
+                    <span>info@duh-nut-sweets.com</span>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
