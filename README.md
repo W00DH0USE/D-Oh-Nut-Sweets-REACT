@@ -1,6 +1,8 @@
 # D'Oh! Nut Sweets
 
-D'Oh! Nut Sweets is a mock donut and cakes online store.
+D'Oh! Nut Sweets is a fully responsive mock donut and cakes online store.
+You can add items to the cart which is fully working and will update the quantity, tax and totals.
+The Paypal button is set up ready to use once Paypal account details have been entered.
 
 ## Screenshots
 Landing Page:
