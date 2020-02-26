@@ -1,11 +1,22 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { HashLink } from 'react-router-hash-link';
 import {ProductConsumer} from "../context";
 
 export default class Navbar extends Component {
   state = {
-    navOpen: false,
+    mobileNavOpen: false,
+  };
+
+  openMobileNav = () => {
+    this.setState((prevState) => {
+      return { mobileNavOpen: !prevState.mobileNavOpen };
+    });
+  };
+
+  closeMobileNav = () => {
+    this.setState(() => {
+      return { mobileNavOpen: false };
+    });
   };
 
   render() {
@@ -18,8 +29,8 @@ export default class Navbar extends Component {
               <Link to="/">
                 <img src={require("../assets/images/logo.svg")} alt="store" className="navbar-brand" />
               </Link>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+              <button class="navbar-toggler" type="button" onClick={() => this.openMobileNav()}>
+                <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
               </button>
 
               <div class="collapse navbar-collapse" id="navbarsExample04">
@@ -39,15 +50,31 @@ export default class Navbar extends Component {
                       custom cakes
                     </Link>
                   </li>
-                  <li class="nav-item dropdown">
-                    <div class="dropdown-menu" aria-labelledby="dropdown04">
-                      <Link class="dropdown-item" to="/store">Store</Link>
-                      <HashLink class="dropdown-item" to="/services">Services</HashLink>
-                      <Link class="dropdown-item" to="/custom">Custom Cakes</Link>
-                    </div>
-                  </li>
                 </ul>
               </div>
+              {this.state.mobileNavOpen === true ? 
+                <div className="mobile-nav">
+                  <ul>
+                  <li class="nav-item active">
+                      <Link to="/" className="mobile-nav-link nav-link ml-4" onClick={() => this.closeMobileNav()}>
+                        home
+                      </Link>
+                    </li>
+                    <li class="nav-item">
+                      <Link to="/store" className="mobile-nav-link nav-link ml-4" onClick={() => this.closeMobileNav()}>
+                        store
+                      </Link>
+                    </li>
+                    <li class="nav-item">
+                      <Link to="/custom" className="mobile-nav-link nav-link ml-4" onClick={() => this.closeMobileNav()}>
+                        custom cakes
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+                :
+                <div></div>
+              }
               <div class="nav-number align-items-center justify-content-between">
                 <span class="info-icon mx-lg-3">
                   <i class="fas fa-phone"></i>
