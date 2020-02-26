@@ -4,7 +4,7 @@ D'Oh! Nut Sweets is a mock donut and cakes online store.
 
 ## Screenshots
 Landing Page:
-![landing page](./images/screenshots/screencapture-1.png)
+![landing page](./public/images/screenshots/screencapture-1.png)
 
 Store Page:
 ![store page](./images/screenshots/screencapture-store.png)
