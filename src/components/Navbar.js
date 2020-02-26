@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Navbar from 'react-bootstrap/Navbar'
 import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 import {ProductConsumer} from "../context";
@@ -31,29 +30,18 @@ export default class Navbar extends Component {
                     </Link>
                   </li>
                   <li class="nav-item">
-                    <HashLink to="/#about" className="nav-link">
-                      about
-                    </HashLink>
-                  </li>
-                  <li class="nav-item">
-                    <Link to="/store" className="nav-link">
+                    <Link to="/store" className="nav-link ml-4">
                       store
                     </Link>
                   </li>
                   <li class="nav-item">
-                    <HashLink to="/#services" className="nav-link">
-                      services
-                    </HashLink>
-                  </li>
-                  <li class="nav-item">
-                    <Link to="/custom" className="nav-link">
+                    <Link to="/custom" className="nav-link ml-4">
                       custom cakes
                     </Link>
                   </li>
                   <li class="nav-item dropdown">
                     <div class="dropdown-menu" aria-labelledby="dropdown04">
-                      <Link class="dropdown-item" to="/#about">About</Link>
-                      <HashLink class="dropdown-item" to="/store">Store</HashLink>
+                      <Link class="dropdown-item" to="/store">Store</Link>
                       <HashLink class="dropdown-item" to="/services">Services</HashLink>
                       <Link class="dropdown-item" to="/custom">Custom Cakes</Link>
                     </div>

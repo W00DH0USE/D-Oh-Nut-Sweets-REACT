@@ -6,7 +6,7 @@ import {Helmet} from "react-helmet";
 export default class LandingPage extends Component {
   render() {
     return (
-      <div>
+      <div style={{ paddingTop: "76px"}}>
         <Helmet>
           <title>D'Oh! Nut Sweets - Home</title>
         </Helmet>

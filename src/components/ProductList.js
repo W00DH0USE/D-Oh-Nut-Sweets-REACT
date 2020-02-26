@@ -11,7 +11,7 @@ export default class ProductList extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="productWrapper py-5">
+        <div className="productWrapper pb-5" style={{ paddingTop: "76px"}}>
           <div className="container">
             <Title name="our" title="store" />
             <div className="row">

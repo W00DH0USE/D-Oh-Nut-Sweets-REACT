@@ -10,7 +10,7 @@ import {Helmet} from "react-helmet";
 export default class Store extends Component {
   render() {
     return (
-      <section>
+      <section style={{ paddingTop: "76px"}}>
         <Helmet>
           <title>D'Oh! Nut Sweets - Cart</title>
         </Helmet>
