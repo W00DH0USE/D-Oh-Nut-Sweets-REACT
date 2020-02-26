@@ -7,13 +7,13 @@ Landing Page:
 ![landing page](./public/images/screenshots/screencapture-1.png)
 
 Store Page:
-![store page](./images/screenshots/screencapture-store.png)
+![store page](./public/images/screenshots/screencapture-store.png)
 
 CustomOrder Cake Page:
-![custom cake page](./images/screenshots/screencapture-custom-cake.png)
+![custom cake page](./public/images/screenshots/screencapture-custom-cake.png)
 
 Cart Page:
-![cart page](./images/screenshots/screencapture-cart.png)
+![cart page](./public/images/screenshots/screencapture-cart.png)
 
 ## Built With
 
