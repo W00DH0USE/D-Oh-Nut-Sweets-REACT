@@ -1,9 +1,13 @@
 import React, { Component } from "react";
+import Navbar from 'react-bootstrap/Navbar'
 import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 import {ProductConsumer} from "../context";
 
 export default class Navbar extends Component {
+  state = {
+    navOpen: false,
+  };
 
   render() {
     return (
@@ -11,37 +15,51 @@ export default class Navbar extends Component {
         {(value) => {
           const {cart, cartSubTotal} = value;
           return (
-            <nav className="navbar navbar-expand-sm  navbar-dark px-sm-5">
+            <nav class="navbar navbar-expand-md fixed-top">
               <Link to="/">
                 <img src={require("../assets/images/logo.svg")} alt="store" className="navbar-brand" />
               </Link>
-              <ul className="navbar-nav align-items-center">
-                <li className="nav-item ml-5">
-                  <Link to="/" className="nav-link">
-                    home
-                  </Link>
-                </li>
-                <li className="nav-item ml-5">
-                  <HashLink to="/#about" className="nav-link">
-                    about
-                  </HashLink>
-                </li>
-                <li className="nav-item ml-5">
-                  <Link to="/store" className="nav-link">
-                    store
-                  </Link>
-                </li>
-                <li className="nav-item ml-5">
-                  <HashLink to="/#services" className="nav-link">
-                    services
-                  </HashLink>
-                </li>
-                <li className="nav-item ml-5">
-                  <Link to="/custom" className="nav-link">
-                    custom cakes
-                  </Link>
-                </li>
-              </ul>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarsExample04">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <Link to="/" className="nav-link ml-5">
+                      home
+                    </Link>
+                  </li>
+                  <li class="nav-item">
+                    <HashLink to="/#about" className="nav-link">
+                      about
+                    </HashLink>
+                  </li>
+                  <li class="nav-item">
+                    <Link to="/store" className="nav-link">
+                      store
+                    </Link>
+                  </li>
+                  <li class="nav-item">
+                    <HashLink to="/#services" className="nav-link">
+                      services
+                    </HashLink>
+                  </li>
+                  <li class="nav-item">
+                    <Link to="/custom" className="nav-link">
+                      custom cakes
+                    </Link>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <div class="dropdown-menu" aria-labelledby="dropdown04">
+                      <Link class="dropdown-item" to="/#about">About</Link>
+                      <HashLink class="dropdown-item" to="/store">Store</HashLink>
+                      <HashLink class="dropdown-item" to="/services">Services</HashLink>
+                      <Link class="dropdown-item" to="/custom">Custom Cakes</Link>
+                    </div>
+                  </li>
+                </ul>
+              </div>
               <div class="nav-number align-items-center justify-content-between">
                 <span class="info-icon mx-lg-3">
                   <i class="fas fa-phone"></i>
