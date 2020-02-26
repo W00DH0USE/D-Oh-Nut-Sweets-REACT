@@ -36,7 +36,7 @@ export default class LandingPage extends Component {
                   <strong className="banner-title"> us</strong>
                 </h1>
                 <p className="my-4 text-muted w-75">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolor mollitia maiores magni, corporis error, repellat nesciunt esse dignissimos voluptates repellendus ipsa. Veritatis, fuga. Iure.
+                  Locally owned store dedicated to donuts, offering many flavors and varieties. We also make custom cakes for special occasions or weddings.
                 </p>
                 <Link to="/products">
                   <ButtonContainer className="btn banner-link text-uppercase my-2">
@@ -60,21 +60,21 @@ export default class LandingPage extends Component {
                 <img src={require("../../assets/images/FAVPNG_donuts-coffee-and-doughnuts-jelly-doughnut-gelatin-dessert-clip-art_4nWykPuF.png")} className="services-img" alt="bread-icon" />
                 <h6 className="text-uppercase my-3 service-title">donuts</h6>
                 <p className="w-75 mx-auto text-left service-text">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id illum nobis delectus natus dolorum laudantium ad possimus? Ut, alias quasi.
+                  Different shapes, sizes and irresistibly delicious—each bite will brighten your day.
                 </p>
               </div>
               <div className="col-md-4 text-center my-3">
                 <img src={require("../../assets/images/FAVPNG_donuts-sufganiyah-coffee-and-doughnuts-clip-art_mPkNEf1T.png")} className="services-img" alt="cupcake-icon" />
-                <h6 className="text-uppercase my-3 service-title">custom donuts</h6>
+                <h6 className="text-uppercase my-3 service-title">custom birthday</h6>
                 <p className="w-75 mx-auto text-left service-text">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id illum nobis delectus natus dolorum laudantium ad possimus? Ut, alias quasi.
+                  You think it, we create it. Nothing's too big or too complicated.
                 </p>
               </div>
               <div className="col-md-4 text-center my-3">
                 <img src={require("../../assets/images/FAVPNG_wedding-cake-torte-marriage_XZUPsgfa.png")} className="services-img" alt="cake-icon" />
                 <h6 className="text-uppercase my-3 service-title">wedding cakes</h6>
                 <p className="w-75 mx-auto text-left service-text">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id illum nobis delectus natus dolorum laudantium ad possimus? Ut, alias quasi.
+                  Creative, handmade designs, paired with seasonal flavorings, everyone is something a bit out of the ordinary.
                 </p>
               </div>
             </div>
@@ -93,9 +93,8 @@ export default class LandingPage extends Component {
             </div>
             <div className="row">
               <div className="col-sm-11 mx-auto col-md-6 col-lg-4 my-4 text-capitalize text-center">
-                <h3 className="py-3">birthday cake</h3>
+                <h3 className="py-3">custom cake</h3>
                 <div className="text-muted">
-                  <p className="my-3">birthday cake with a name</p>
                   <p className="my-3">custom ingredients</p>
                   <p className="my-3">custom size</p>
                   <p className="my-3">custom design</p>
@@ -109,9 +108,8 @@ export default class LandingPage extends Component {
                 </div>
               </div>
               <div className="col-sm-11 mx-auto col-md-6 col-lg-4 my-4 text-capitalize text-center">
-                <h3 className="py-3">custom cake</h3>
+                <h3 className="py-3">birthday cake</h3>
                 <div className="text-muted">
-                  <p className="my-3">birthday cake with a name</p>
                   <p className="my-3">custom ingredients</p>
                   <p className="my-3">custom size</p>
                   <p className="my-3">custom design</p>
@@ -127,7 +125,6 @@ export default class LandingPage extends Component {
               <div className="col-sm-11 mx-auto col-md-6 col-lg-4 my-4 text-capitalize text-center">
                 <h3 className="py-3">wedding cake</h3>
                 <div className="text-muted">
-                  <p className="my-3">birthday cake with a name</p>
                   <p className="my-3">custom ingredients</p>
                   <p className="my-3">custom size</p>
                   <p className="my-3">custom design</p>
