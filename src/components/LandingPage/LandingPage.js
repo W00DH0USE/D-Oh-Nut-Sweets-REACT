@@ -18,7 +18,7 @@ export default class LandingPage extends Component {
                 welcome to 
                 <strong className="banner-title">D'Oh! Nut Sweet's</strong>
               </h1>
-              <Link to="/products">
+              <Link to="/store">
                 <ButtonContainer className="btn banner-link text-uppercase my-2">
                   store
                 </ButtonContainer>
@@ -38,7 +38,7 @@ export default class LandingPage extends Component {
                 <p className="my-4 text-muted w-75">
                   Locally owned store dedicated to donuts, offering many flavors and varieties. We also make custom cakes for special occasions or weddings.
                 </p>
-                <Link to="/products">
+                <Link to="/store">
                   <ButtonContainer className="btn banner-link text-uppercase my-2">
                     store
                   </ButtonContainer>
